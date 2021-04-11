@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nama = new Intent(MainActivity.this,TeamList.class);
+                Intent nama = new Intent(MainActivity.this, TeamListActivity.class);
                 nama.putExtra("nama",InputNama.getText().toString());
                 startActivity(nama);
             }
