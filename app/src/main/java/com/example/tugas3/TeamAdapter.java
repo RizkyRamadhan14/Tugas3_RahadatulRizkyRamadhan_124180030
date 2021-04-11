@@ -51,8 +51,8 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.viewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull TeamAdapter.viewHolder holder, int i) {
-        Glide.with(context).load(getTeamModel().get(i).getLogoTeam()).into(holder.ivlogo);
-        holder.tvnama.setText(getTeamModel().get(i).getNamaTeam());
+        Glide.with(context).load(getTeamModel().get(i).getLogoTeam()).into(holder.ivLogo);
+        holder.tvNama.setText(getTeamModel().get(i).getNamaTeam());
     }
 
     @Override
@@ -61,12 +61,12 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.viewHolder>{
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        private ImageView ivlogo;
-        private TextView tvnama;
+        private ImageView ivLogo;
+        private TextView tvNama;
         public viewHolder (@NonNull View itemView){
             super(itemView);
-            ivlogo = itemView.findViewById(R.id.IVLogo);
-            tvnama = itemView.findViewById(R.id.TVNama);
+            ivLogo = itemView.findViewById(R.id.IVLogo);
+            tvNama = itemView.findViewById(R.id.TVNama);
         }
     }
 }

@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/IVLogo"
-        android:layout_width="300px"
-        android:layout_height="300px"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
         android:layout_centerHorizontal="true"/>
     <TextView
         android:id="@+id/TVNama"

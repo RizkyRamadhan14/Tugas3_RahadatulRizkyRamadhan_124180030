@@ -8,7 +8,8 @@
 
     <TextView
         android:id="@+id/TV2"
-        android:layout_marginTop="100px"
+        android:layout_below="@id/B2"
+        android:layout_marginTop="50px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat Datang"
@@ -26,11 +27,35 @@
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"/>
 
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_below="@id/TV3"
+        android:layout_marginTop="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berikut adalah tim - tim yang berpartisipasi dalam Formula 1"
+        android:textSize="50px"
+        android:textColor="#ee0000"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        android:layout_below="@id/TV3"
-        android:layout_marginTop="30px"
+        android:layout_below="@id/TV4"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_alignRight="@id/TV4"
+        android:layout_marginRight="20px"
+
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        />
+
 </RelativeLayout>

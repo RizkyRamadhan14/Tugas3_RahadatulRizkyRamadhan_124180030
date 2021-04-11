@@ -1,22 +1,22 @@
 package com.example.tugas3;
 
 public class TeamModel {
-    private String NamaTeam;
-    private int LogoTeam;
+    private String namaTeam;
+    private int logoTeam;
 
     public String getNamaTeam() {
-        return NamaTeam;
+        return namaTeam;
     }
 
     public void setNamaTeam(String namaTeam) {
-        NamaTeam = namaTeam;
+        this.namaTeam = namaTeam;
     }
 
     public int getLogoTeam() {
-        return LogoTeam;
+        return logoTeam;
     }
 
     public void setLogoTeam(int logoTeam) {
-        LogoTeam = logoTeam;
+        this.logoTeam = logoTeam;
     }
 }
